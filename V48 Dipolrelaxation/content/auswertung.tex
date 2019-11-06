@@ -83,11 +83,13 @@ Dazu wird eine numerische Integration der Form
     \label{eqn:int}
     \int_T^{T^*} j(T') \symup{d}\,T'
 \end{equation}
-durchgeführt. Dies erfolgt mit \textit{Scientific Python} \cite{scipy} und der Trapez-Regel. Dabei ist zu beachten, dass $j(T^*) \approx \SI{0}{\ampere}$ gelten muss.
-Die lässt sich für die Heizrate 1 auf $T^*_1 = \SI{275.85}{\kelvin}$ und für die Heizrate 2 auf $T^*_2 = \SI{278.45}{\kelvin}$ approximieren, da diese den kleinsten absoluten Abstand zu \SI{0}{\ampere} haben.
+durchgeführt.
+Dies erfolgt mit \textit{Scientific Python} \cite{scipy} und der Trapez-Regel.
+Dabei ist zu beachten, dass $j(T^*) \approx \SI{0}{\ampere}$ gelten muss.
+Dies lässt sich für die Heizrate 1 auf $T^*_1 = \SI{275.85}{\kelvin}$ und für die Heizrate 2 auf $T^*_2 = \SI{278.45}{\kelvin}$ approximieren, da diese den kleinsten absoluten Abstand zu \SI{0}{\ampere} haben.
 Wird nun
 \begin{equation*}
-    \ln\left(\frac{\int_T^{T^*} j(T') \symup{d}\,T'}{h_i \cdot j(T)}\right)
+    \ln\left(\frac{\int_T^{T^*} j(T') \symup{d}\,T'}{b_i \cdot j(T)}\right)
 \end{equation*}
 gegen $\frac{1}{T}$ aufgetragen und eine lineare Ausgleichrechnung der Form
 \begin{equation}
