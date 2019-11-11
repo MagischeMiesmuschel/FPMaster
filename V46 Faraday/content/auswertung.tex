@@ -1,0 +1,180 @@
+\section{Auswertung}
+\label{sec:Auswertung}
+
+Im folgenden Abschnitt werden die gemessenen Daten visualisiert und ausgwertet.
+Die folgenden Rechnungen und Ausgleichsrechnungen werden mit python und verschiedner Bibliotheken durchgeführt.
+
+\subsection{Magnetfeldmessung}
+\label{sec:magFeld}
+
+Zur Bestimmung des maximalen Magnetfeldes innerhalb des Elektromagneten werden die gemessenen Werte in Tabelle \ref{tab:magFeld} in Abbildung \ref{abb:magFeld} dargetsellt.
+Es wird die Verschiebung auf der Symmetrieachse gegen die Magnetfeldstärke abgebildet.
+Für die nachfolgenden Rechnungen wird der maximale gemessene Wert
+\begin{equation}
+  B_{\text{max}}=409\,\text{mT}
+\end{equation}
+als vorherrschendes Magnetfeld an der Position der Probe angenommen.
+\begin{figure}
+  \centering
+  \includegraphics{bfeld.pdf}
+  \caption{Zusammenhang zwischen Magnetfeldstärke und Abstand auf der Symmetrieachse.}
+  \label{abb:magFeld}
+\end{figure}
+\FloatBarrier
+
+\begin{table}
+  \centering
+  \caption{Magnetfeldmessung.}
+  \label{tab:magFeld}
+  \begin{tabular}{c | c}
+    \toprule
+    Position in mm & Magnetfeldstärke in mT \\
+    \midrule
+    0.0 & 251.0 \\
+    1.0 & 319.0 \\
+    2.0 & 356.0 \\
+    3.0 & 376.0 \\
+    4.0 & 388.0 \\
+    5.0 & 396.0 \\
+    6.0 & 402.0 \\
+    7.0 & 405.0 \\
+    8.0 & 408.0 \\
+    9.0 & 409.0 \\
+    10.0 & 409.0 \\
+    11.0 & 407.0 \\
+    12.0 & 407.0 \\
+    13.0 & 400.0 \\
+    14.0 & 393.0 \\
+    15.0 & 383.0 \\
+    16.0 & 372.0 \\
+    17.0 & 353.0 \\
+    18.0 & 328.0 \\
+    19.0 & 295.0 \\
+    20.0 & 254.0 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\FloatBarrier
+
+\subsection{Messung mit undotiertem GaAs}
+\label{sec:undotiert}
+
+Die Messung mit der undotierten GaAs-Probe liefert die Ergebnisse in Tabelle \ref{tab:undot}.
+Mit der Dicke der Probe von $L=5.11\,$mm und den gemessenen Werten wird ein normierter Wert der Faradayrotation bestimmt und in die Tabelle mit den Messwerten getragen.
+Diese normierten Werte werden gegen $\lambda^2$ aufgetragen und sind in Abbildung \ref{abb:undot} zu sehen.
+Es ist ein deutlich abfallender Trend mit zunehmender Wellenlänge zu erkennen.
+
+\begin{table}
+  \centering
+  \caption{Undotierte GaAs-Probe und normierte Faradayrotation.}
+  \label{tab:magFeld}
+  \begin{tabular}{c | c | c | c}
+    \toprule
+    $\lambda$/$\mu$m & $\Theta(+B)$/° & $\Theta(-B)$/°& $\Theta_{\text{norm}}$/rad/mm \\
+    \midrule
+    1.06 & 267.0 & 243.0 & 0.082 \\
+    1.29 & 261.0 & 248.5 & 0.043 \\
+    1.45 & 261.2 & 250.0 & 0.038 \\
+    1.72 & 258.0 & 249.9 & 0.028 \\
+    1.96 & 252.0 & 244.8 & 0.025 \\
+    2.156 & 248.7 & 243.5 & 0.018 \\
+    2.34 & 225.6 & 221.5 & 0.014 \\
+    2.51 & 212.0 & 208.4 & 0.012 \\
+    2.65 & 177.0 & 173.4 & 0.012 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\FloatBarrier
+
+\begin{figure}
+  \centering
+  \includegraphics{undotiert.pdf}
+  \caption{Grafische Darstellung der Messwerte aus Tabelle \ref{tab:undot}.}
+  \label{abb:magFeld}
+\end{figure}
+\FloatBarrier
+
+\subsection{Messung mit dotierten GaAs-Proben}
+\label{sec:dot}
+
+Die unterschiedlich dotierten Proben haben eine Konzentration von $N_{\text{leicht}}=1.2\cdot10^{18}\text{cm}^{-3}$ und $N_{\text{hoch}}=2.8\cdot10^{18}\text{cm}^{-3}$ und die Dicken $L_{\text{leicht}}=1.296\,$mm und $L_{\text{hoch}}=1.36\,$mm.
+Deren Messwerte sind in den Tabellen \ref{tab:hoch} und \ref{tab:tief} aufgeführt.
+Die Faradayrotation wird jeweils normiert und von diesem Wert für alle Wellenlängen die normierte Faradayrotation der undotierten Probe abgezogen.
+So kann die Faradayrotation $\Delta\theta_\text{norm}$, die durch Leitungselektronen bedingt ist, untersucht werden. 
+Die berechneten Werte sind in Abbildung \ref{abb:delta} grafisch dargetsellt.
+In beiden Fällen ist eine lineare Abhängigkeit zu $\lambda^2$ ersichtlich, wie mit Gleichung \ref{eqn:?} erwartet wird.
+Bei der leicht dotierten Probe fällt ein Wert weit aus der Reihe und wird nicht für die lineare Ausgleichrechnung berücksichtigt.
+Ein Fit der Daten wird mit der Funktion
+\begin{equation}
+  \Delta\theta_{\text{norm}} = A\lambda^2
+\end{equation}
+durchgeführt und ergibt für die beidne Proben folgende Parameter:
+\begin{align*}
+  A_{\text{leicht}} &= 0.01705 \frac{\text{rad}}{\text{mm}^3\mu m} \\
+  A_{\text{hoch}} &= 0.02832 \frac{\text{rad}}{\text{mm}^3\mu m}
+\end{align*}
+Aus der Steigung $A$ lässt sich mit Gleichung \ref{eqn:?} die effektive Mase bestimmen.
+Für den Brechungsindex wird nach \cite{nGaAs} $n=3.4$ genutzt.
+Mit
+\begin{equation}
+  m*=\sqrt{\frac{e^3\cdot N \cdot B}{A\cdot 8\pi \cdot 2\epsilon_0 c^3 \cdot n }}
+\end{equation}
+ergeben sich die Werte
+\begin{align*}
+  m*_{\text{leicht}} &= 4.2992\cdot 10^{-32}\text{kg} \\
+  \frac{m*_{\text{leicht}}}{m_e} &= 0.0784 \\
+  m*_{\text{hoch}} &= 5.0958\cdot 10^{-32}\text{kg} \\
+  \frac{m*_{\text{hoch}}}{m_e} &= 0.0929\\
+\end{align*}
+
+\begin{table}
+  \centering
+  \caption{Leicht dotierte GaAs-Probe und normierte Faradayrotation.}
+  \label{tab:tief}
+  \begin{tabular}{c | c | c | c}
+    \toprule
+    $\lambda$/$\mu$m & $\Theta(+B)$/° & $\Theta(-B)$/°& $\Theta_{\text{norm}}$/rad/mm \\
+    \midrule
+    1.06 & 260.0 & 251.9 & 0.022 \\
+    1.29 & 259.0 & 251.0 & 0.060 \\
+    1.45 & 258.7 & 252.5 & 0.041 \\
+    1.72 & 257.0 & 250.0 & 0.062 \\
+    1.96 & 252.0 & 244.3 & 0.074 \\
+    2.156 & 250.1 & 240.7 & 0.103 \\
+    2.34 & 227.3 & 219.1 & 0.091 \\
+    2.51 & 206.9 & 206.0 & -0.001 \\
+    2.65 & 242.7 & 235.0 & 0.087 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\FloatBarrier
+
+\begin{table}
+  \centering
+  \caption{Hoch dotierte GaAs-Probe und normierte Faradayrotation.}
+  \label{tab:hoch}
+  \begin{tabular}{c | c | c | c}
+    \toprule
+    $\lambda$/$\mu$m & $\Theta(+B)$/° & $\Theta(-B)$/°& $\Theta_{\text{norm}}$/rad/mm \\
+    \midrule
+    1.06 & 161.0 & 149.5 & 0.073 \\
+    1.29 & 160.5 & 151.9 & 0.073 \\
+    1.45 & 159.7 & 151.1 & 0.078 \\
+    1.72 & 163.0 & 154.0 & 0.094 \\
+    1.96 & 170.1 & 159.5 & 0.118 \\
+    2.156 & 171.0 & 161.7 & 0.107 \\
+    2.34 & 194.3 & 181.3 & 0.161 \\
+    2.51 & 209.5 & 193.9 & 0.198 \\
+    2.65 & 247.0 & 233.8 & 0.165 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\FloatBarrier
+
+\begin{figure}
+  \centering
+  \includegraphics{daltaTheta.pdf}
+  \caption{Grafische Darstellung der Messwerte aus Tabellen \ref{tab:tief} und \ref{tab:hoch}.}
+  \label{abb:delta}
+\end{figure}
+\FloatBarrier
