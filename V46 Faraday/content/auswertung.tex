@@ -2,14 +2,14 @@
 \label{sec:Auswertung}
 
 Im folgenden Abschnitt werden die gemessenen Daten visualisiert und ausgwertet.
-Die folgenden Rechnungen und Ausgleichsrechnungen werden mit python und verschiedner Bibliotheken durchgeführt.
+Die Rechnungen und Ausgleichsrechnungen werden mit python und verschiedner Bibliotheken durchgeführt.
 
 \subsection{Magnetfeldmessung}
 \label{sec:magFeld}
 
-Zur Bestimmung des maximalen Magnetfeldes innerhalb des Elektromagneten werden die gemessenen Werte in Tabelle \ref{tab:magFeld} in Abbildung \ref{abb:magFeld} dargetsellt.
+Zur Bestimmung des maximalen Magnetfeldes innerhalb des Elektromagneten werden die gemessenen Werte aus Tabelle \ref{tab:magFeld} in Abbildung \ref{abb:magFeld} dargetsellt.
 Es wird die Verschiebung auf der Symmetrieachse gegen die Magnetfeldstärke abgebildet.
-Für die nachfolgenden Rechnungen wird der maximale gemessene Wert
+Für die alle weiteren Rechnungen wird der maximale gemessene Wert
 \begin{equation}
   B_{\text{max}}=409\,\text{mT}
 \end{equation}
@@ -67,7 +67,7 @@ Es ist ein deutlich abfallender Trend mit zunehmender Wellenlänge zu erkennen.
 \begin{table}
   \centering
   \caption{Undotierte GaAs-Probe und normierte Faradayrotation.}
-  \label{tab:magFeld}
+  \label{tab:undot}
   \begin{tabular}{c | c | c | c}
     \toprule
     $\lambda$/$\mu$m & $\Theta(+B)$/° & $\Theta(-B)$/°& $\Theta_{\text{norm}}$/rad/mm \\
@@ -90,7 +90,7 @@ Es ist ein deutlich abfallender Trend mit zunehmender Wellenlänge zu erkennen.
   \centering
   \includegraphics{undotiert.pdf}
   \caption{Grafische Darstellung der Messwerte aus Tabelle \ref{tab:undot}.}
-  \label{abb:magFeld}
+  \label{abb:undot}
 \end{figure}
 \FloatBarrier
 
@@ -108,23 +108,23 @@ Ein Fit der Daten wird mit der Funktion
 \begin{equation}
   \Delta\theta_{\text{norm}} = A\lambda^2
 \end{equation}
-durchgeführt und ergibt für die beidne Proben folgende Parameter:
+durchgeführt und ergibt für die beiden Proben folgende Parameter:
 \begin{align*}
-  A_{\text{leicht}} &= 0.01705 \frac{\text{rad}}{\text{mm}^3\mu m} \\
-  A_{\text{hoch}} &= 0.02832 \frac{\text{rad}}{\text{mm}^3\mu m}
+  A_{\text{leicht}} &= (0.0170526 +/- 0.0000031) \frac{\text{rad}}{\text{mm}^3\mu m} \\
+  A_{\text{hoch}} &= (0.0283207 \pm 0.0000036) \frac{\text{rad}}{\text{mm}^3\mu m}
 \end{align*}
 Aus der Steigung $A$ lässt sich mit Gleichung \ref{eqn:?} die effektive Mase bestimmen.
-Für den Brechungsindex wird nach \cite{nGaAs} $n=3.4$ genutzt.
+Für den Brechungsindex in GaAs wird nach \cite{nGaAs} $n=3.4$ genutzt.
 Mit
 \begin{equation}
   m*=\sqrt{\frac{e^3\cdot N \cdot B}{A\cdot 8\pi \cdot 2\epsilon_0 c^3 \cdot n }}
 \end{equation}
-ergeben sich die Werte
+ergeben sich die für die effektive Masse folgende Werte:
 \begin{align*}
-  m*_{\text{leicht}} &= 4.2992\cdot 10^{-32}\text{kg} \\
-  \frac{m*_{\text{leicht}}}{m_e} &= 0.0784 \\
-  m*_{\text{hoch}} &= 5.0958\cdot 10^{-32}\text{kg} \\
-  \frac{m*_{\text{hoch}}}{m_e} &= 0.0929\\
+  m^*_{\text{leicht}} &= (4.2992 \pm 0.0004)\cdot 10^{-32}\text{kg} \\
+  \frac{m*_{\text{leicht}}}{m_e} &= 0.078369\pm 0.000007 \\
+  m^*_{\text{hoch}} &= (5.09582\pm 0.00032)\cdot 10^{-32}\text{kg} \\
+  \frac{m*_{\text{hoch}}}{m_e} &= 0.092891\pm 0.000006\\
 \end{align*}
 
 \begin{table}
@@ -173,7 +173,7 @@ ergeben sich die Werte
 
 \begin{figure}
   \centering
-  \includegraphics{daltaTheta.pdf}
+  \includegraphics{deltaTheta.pdf}
   \caption{Grafische Darstellung der Messwerte aus Tabellen \ref{tab:tief} und \ref{tab:hoch}.}
   \label{abb:delta}
 \end{figure}

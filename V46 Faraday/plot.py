@@ -43,15 +43,16 @@ params_leicht, cov_leicht = curve_fit(Gerade,lam_fit_leicht**2,theta_leicht_fit)
 lam_fit =np.linspace(1,7.5,200)
 
 print('param hoch: %.7f +/- %.7f'%(params_hoch[0],cov_hoch[0]))
-print('param leicht: %.5f +/- %.7f'%(params_leicht[0],cov_leicht[0]))
+print('param leicht: %.7f +/- %.7f'%(params_leicht[0],cov_leicht[0]))
 
-#params_leicht = ufloat(params_leicht[0],cov_leicht[0])
+param_leicht = ufloat(params_leicht[0],cov_leicht[0])
+param_hoch = ufloat(params_hoch[0],cov_hoch[0])
 
-m_eff_leicht = np.sqrt(e**3*n_leichtdot*B / (params_leicht[0]*10e9*8*np.pi**2*epsilon*c**3*n_GaAs))
+m_eff_leicht = (e**3*n_leichtdot*B / (param_leicht*10e9*8*np.pi**2*epsilon*c**3*n_GaAs))**0.5
 print(m_eff_leicht)
 print(m_eff_leicht/m_e)
 
-m_eff_hoch = np.sqrt(e**3*n_hochdot*B / (params_hoch[0]*10e9*8*np.pi**2*epsilon*c**3*n_GaAs))
+m_eff_hoch = (e**3*n_hochdot*B / (param_hoch*10e9*8*np.pi**2*epsilon*c**3*n_GaAs))**0.5
 print(m_eff_hoch)
 print(m_eff_hoch/m_e)
 
