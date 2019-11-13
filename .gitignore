@@ -1,6 +1,5 @@
 # von Latex ertsellte Dateien werden nicht beachtet
 **build/
-*.pdf
 **__pycache__/
 py_output.txt
 .DS_Store
