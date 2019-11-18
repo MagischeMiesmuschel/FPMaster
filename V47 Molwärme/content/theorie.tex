@@ -1,0 +1,127 @@
+\section{Ziel}
+Ziel des Versuches ist die Untersuchung der Temperaturabhängigkeit der
+Molwärme~$C_{\mathrm{V}}$ von Kupfer, sowie die Bestimmung der
+materialspezifischen Größe~$\theta_{\mathrm{D}}$. Dazu wird die Molwärme bei
+verschiedenen Temperaturen gemessen und mit der Theorie verglichen.
+
+\section{Theorie}
+\label{sec:theorie}
+
+%
+\subsection{Die klassische Theorie der Molwärme}
+%
+Betrachtet man das System des Festkörpers innerhalb der klassischen Physik, so
+ergibt sich für die Molwärme der Zusammenhang nach Dulong-Petit. Dazu wird
+angenommen, dass die Schwinger in den Gittern des Festkörpers räumlich fest sind
+und somit in \num{3}~Freiheitsgraden schwingen können. Die Schwingungen dieser
+Atome sind dabei harmonische Schwingungen. Die mittlere kinetische Energie eines
+harmonischen Oszillators entspricht der mittleren potentiellen Energie. Pro
+Freiheitsgrad besitzt jedes Atom im Mittel die
+Energie~$\sfrac{1}{2}k_{\mathrm{B}}T$, sodass sich für alle Feiheitsgrade und
+die beiden Energieformen eine mittlere Energie von
+%
+\begin{equation}
+  \langle u\rangle=2\cdot 3\cdot\frac{1}{2}k_{\mathrm{B}}T
+\end{equation}
+%
+pro Atom ergibt. Für ein Mol an Atomen im Festkörper ergibt sich über die
+passende thermodynamische Relation die material- und temperaturunabhängige Größe~$C_{\mathrm{V}}=3R$.
+%
+\begin{equation}
+  C_{\mathrm{V}}=\left(\frac{\partial}{\partial T}U\cdot N_{\mathrm{L}}\right)_{\mathrm{V}}=3R
+  \label{eq:CV}
+\end{equation}
+%
+Dieses Ergebnis deckt sich mit den experimentellen Beobachtungen allerdings
+lediglich für sehr hohe Temperaturen oder für Festkörper mit sehr hohen molaren
+Massen. Daher ist hier ein anderes theoretisches Modell sinnvoll.
+%
+\subsection{Die Theorie nach Einstein}
+%
+Das Modell nach Einstein berücksichtigt die Quantisierung der Energie. So
+wird hier angenommen, dass Energie zwischen den einzelnen Atomen im Festkörper
+nur in Vielfachen von~$\hbar\omega$ ausgetauscht werden kann. $\omega$ ist dabei
+die als einheitlich angenommene bei den Schwingern im Kristall vorliegende
+Frequenz. Die Wahrscheinlichkeit, dass nun ein Oszillator bei gegebener
+Temperatur~$T$ im Gleichgewicht mit der Umgebung die Energie~$n\hbar\omega$
+besitzt, ist dabei nach Boltzmann verteilt.
+%
+\begin{equation}
+  W(n)=e^{-\frac{n\hbar\omega}{k_{\mathrm{B}}T}}
+\end{equation}
+%
+Die Summation über alle Energien gewichtet mit ihrer Wahrscheinlichkeit ergibt
+eine mittlere Energie pro Atom von
+%
+\begin{equation}
+  \langle u\rangle_\text{Einstein}=\frac{\hbar\omega}{e^{\sfrac{\hbar\omega}{k_{\mathrm{B}}T}}-1}.
+\end{equation}
+%
+Diese liegt unterhalb der klassisch vorhergesagten Energie. Über die oben
+bereits genannte thermodynamische Relation ergibt sich eine Molwärme, die bei
+hohen Temperaturen das im Experiment beobachtete asymptotische Streben
+gegen~$3R$ zeigt und bei niedrigen Temperaturen die Abnahme der Molwärme
+modelliert. Allerdings liegt diese Modellation im Bereich niedriger Temperaturen
+noch nicht in der Nähe der experimentell bestimmten Werte.
+%
+\begin{equation}
+  C_{\mathrm{V}}=3R\frac{1}{T^2}\frac{\hbar^2\omega^2}{k_{\mathrm{B}}^2}\frac{e^{\frac{\hbar\omega}{k_{\mathrm{B}}T}}}{(e^{\frac{\hbar\omega}{k_{\mathrm{B}}T}}-1)^2}
+\end{equation}
+%
+\subsection{Die Theorie nach Debye}
+%
+Das Modell nach Debye berücksichtigt nun, dass die Frequenzen der
+Eigenschwingungen der Atome im Festkörper nicht mehr einheitlich sind, sondern
+nach einer sogenannten Spektralverteilung~$Z(\omega)$ verteilt sind. Dies
+spiegelt eine deutlich realitätsnähere Annahme wider. Das Modell berücksichtigt
+allerdings nicht die Frequenz- sowie die Richtungsabhängigkeit der
+Phasengeschwindigkeit einer elastischen Welle im Kristall und die Rolle der
+Leitungselektronen, welche allerdings erst bei sehr niedrigen Temperaturen
+nennenswert wird. Ein Kristall von endlichen Ausmessungen aus~$N_{\mathrm{L}}$
+Atomen besitzt nur endlich viele verschiedene Schwingungsfrequenzen,
+nämlich~$3N_{\mathrm{L}}$ verschiedene. Daher muss das Integral über die
+Spektralverteilung auf diesen Wert konvergieren. Dies ist nur möglich, wenn es
+eine endliche Grenzfrequenz $\omega_{\mathrm{D}}$ gibt. Es gilt also
+%
+\begin{equation}
+  \int_0^{\omega_{\mathrm{D}}}Z(\omega)d\omega=3N_{\mathrm{L}}.
+  \label{eq:konv}
+\end{equation}
+%
+Die Grenzfrequenz liegt je nach Berücksichtigung der Phasengeschwindigkeiten bei
+%
+\begin{equation}
+  \omega_{\mathrm{D}}^3=\frac{6\pi^2v^3N_{\mathrm{L}}}{L^3}\quad\text{oder}\quad\omega_{\mathrm{D}}^3=\frac{18\pi^2N_{\mathrm{L}}}{L^3}\frac{v_{\mathrm{long}}^3v_{\mathrm{trans}}^3}{v_{\mathrm{trans}}^3+2v_{\mathrm{long}}^3}.
+  \label{eq:omega_D}
+\end{equation}
+%
+Die Dichte der Eigenschwingungen lässt sich auf dieselbe Weise allgemein als
+%
+\begin{equation}
+  Z(\omega)\mathup{d}\omega=\frac{3L^3}{2\pi^2v^3}\omega^2\mathup{d}\omega\quad\text{oder}\quad Z(\omega)\mathup{d}\omega=\frac{l^3\omega^2}{2\pi^2}\frac{v_{\mathrm{trans}}^3+2v_{\mathrm{long}}^3}{v_{\mathrm{long}}^3v_{\mathrm{trans}}^3}\mathup{d}\omega
+  \label{eq:Z}
+\end{equation}
+%
+beschreiben. Aus den Gleichungen~\eqref{eq:omega_D} und~\eqref{eq:Z} folgt für
+die Frequenzverteilung~$Z(\omega)$
+%
+\begin{equation}
+  Z(\omega)\mathup{d}\omega=\frac{9N_{\mathrm{L}}}{\omega_{\mathrm{D}}^3}\omega^2\mathup{d}\omega.
+\end{equation}
+%
+Es ergibt sich somit für die Molwärme nach Debye der Zusammenhang
+%
+\begin{equation}
+  C_{\mathrm{V}}=9R\left(\frac{T}{\theta_{\mathrm{D}}}\right)^3\int_0^{\frac{\theta_{\mathrm{D}}}{T}}\frac{x^4e^x}{(e^x-1)^2}\mathup{d}x.
+  \label{eq:debyetemperatur}
+\end{equation}
+%
+Aus der endlichen Debye-Frequenz lässt sich sofort auch eine Debye-Temperatur
+herleiten, ab welcher der Festkörper einer klassischen Beschreibung schon gut
+entspricht. Die Debye-Temperatur ist
+als~$\theta_{\mathrm{D}}=\sfrac{\hbar\omega_{\mathrm{D}}}{k_{\mathrm{B}}}$
+definiert und eine materialspezifische Größe. Die oben in Gleichung~\eqref{eq:Z}
+beschriebene Funktion allerdings stellt nun eine universell gültige Definition
+der Molwärme dar. Sie zeigt für große Temperaturen das beobachtete asymptotische
+Verhalten, beschreibt bei geringen Temperaturen allerdings das deutlich näher an
+den experimentellen Werten liegende~\enquote{$T^3$-Gesetz}.
