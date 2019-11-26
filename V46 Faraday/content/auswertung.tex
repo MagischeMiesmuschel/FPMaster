@@ -102,7 +102,7 @@ Deren Messwerte sind in den Tabellen \ref{tab:hoch} und \ref{tab:tief} aufgefüh
 Die Faradayrotation wird jeweils normiert und von diesem Wert für alle Wellenlängen die normierte Faradayrotation der undotierten Probe abgezogen.
 So kann die Faradayrotation $\Delta\theta_\text{norm}$, die durch Leitungselektronen bedingt ist, untersucht werden. 
 Die berechneten Werte sind in Abbildung \ref{abb:delta} grafisch dargetsellt.
-In beiden Fällen ist eine lineare Abhängigkeit zu $\lambda^2$ ersichtlich, wie mit Gleichung \ref{eqn:?} erwartet wird.
+In beiden Fällen ist eine lineare Abhängigkeit zu $\lambda^2$ ersichtlich, wie mit Gleichung \ref{eq:drehwinkel} erwartet wird.
 Bei der leicht dotierten Probe fällt ein Wert weit aus der Reihe und wird nicht für die lineare Ausgleichrechnung berücksichtigt.
 Ein Fit der Daten wird mit der Funktion
 \begin{equation}
@@ -110,16 +110,16 @@ Ein Fit der Daten wird mit der Funktion
 \end{equation}
 durchgeführt und ergibt für die beiden Proben folgende Parameter:
 \begin{align*}
-  A_{\text{leicht}} &= (0.0170526 +/- 0.0000031) \frac{\text{rad}}{\text{mm}^3\mu m} \\
-  A_{\text{hoch}} &= (0.0283207 \pm 0.0000036) \frac{\text{rad}}{\text{mm}^3\mu m}
+  A_{\text{leicht}} &= (0.0170526 +/- 0.0000031) \frac{\text{rad}}{\text{mm}\mu m^2} \\
+  A_{\text{hoch}} &= (0.0283207 \pm 0.0000036) \frac{\text{rad}}{\text{mm}\mu m^2}
 \end{align*}
-Aus der Steigung $A$ lässt sich mit Gleichung \ref{eqn:?} die effektive Mase bestimmen.
+Aus der Steigung $A$ lässt sich mit Gleichung \ref{eq:drehwinkel} die effektive Mase bestimmen.
 Für den Brechungsindex in GaAs wird nach \cite{nGaAs} $n=3.4$ genutzt.
 Mit
 \begin{equation}
-  m*=\sqrt{\frac{e^3\cdot N \cdot B}{A\cdot 8\pi \cdot 2\epsilon_0 c^3 \cdot n }}
+  m*=\sqrt{\frac{e^3\cdot N \cdot B}{A\cdot 8\pi^2\epsilon_0 c^3 \cdot n }}
 \end{equation}
-ergeben sich die für die effektive Masse folgende Werte:
+ergeben sich die für die effektive Masse mit $m_e = 5.485799\cdot 10^{-32}\,$kg folgende Werte:
 \begin{align*}
   m^*_{\text{leicht}} &= (4.2992 \pm 0.0004)\cdot 10^{-32}\text{kg} \\
   \frac{m*_{\text{leicht}}}{m_e} &= 0.078369\pm 0.000007 \\
