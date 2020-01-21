@@ -394,6 +394,10 @@ INPUT /home/jannis/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symb
 INPUT /home/jannis/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT build/plot1.pdf
 INPUT build/plot1.pdf
+INPUT /home/jannis/.local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc
+INPUT /home/jannis/.local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
+INPUT /home/jannis/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /home/jannis/.local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT build/plot2.pdf
 INPUT build/plot2.pdf
 INPUT build/plot3.pdf

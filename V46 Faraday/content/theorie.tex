@@ -9,7 +9,7 @@ Proben des Halbleiters verwendet.
 Die Energieniveaus der einzelnen Atome in einem Kristall überlagern sich und es ensteht eine komplexe Bandstruktur.
 Hierdurch gestaltet sich eine exakte mathemaische Beschreibung meist schwierig und es bedarf
 einer Approximation.
-Bei Halbleitern eignet als Approximationen, die Betrachtung des Leitungsbandes um das Minimum herum (siehe Abb. \ref{fig:band}).
+Bei Halbleitern eignet sich als Approximation, die Betrachtung des Leitungsbandes um das Minimum herum (siehe Abb. \ref{fig:band}).
 \begin{figure}
 \centering
 \includegraphics[width=0.5\linewidth]{./content/images/band.pdf}
@@ -17,7 +17,7 @@ Bei Halbleitern eignet als Approximationen, die Betrachtung des Leitungsbandes u
 \label{fig:band}
 \end{figure}
 In der Umgebung um das Minimum kann die Energie des Bandes $\varepsilon$
-in Abhängigkeit mit dem Wellenzahlvektor $\vec{k}$ genährt werden als:
+in Abhängigkeit mit dem Wellenzahlvektor $\vec{k}$ genähert werden als:
 \begin{equation}
   \label{eq:gleichung_energie}
   \varepsilon(\vec{k})=\varepsilon(0) + \frac{1}{2}\sum_{i=1}^3 \left.\frac{\partial^2 \varepsilon}{\partial k_i^2}\right|_{k=0}k_i^2 + \mathcal{O}(k^3)
@@ -42,7 +42,7 @@ externen elektrischen und magnetischen Feldes.
 Diese Eigenschaft wird insbesondere im übernächsten Kapitel von Nutzen sein.
 
 \subsection{Zirkulare Doppelbrechung}
-Wird die Polarisationsebene von linear polarisiertes Licht $E(z)$ bei der Propagation
+Wird die Polarisationsebene von linear polarisiertem Licht $E(z)$ bei der Propagation
 durch einen Kristall der Länge $L$ gedreht, wird dies als zirkulare Doppelbrechung bezeichnet (vgl. Abb. \ref{fig:zirkulare_doppelbrechung}).
 \begin{figure}
 \centering
@@ -93,20 +93,20 @@ die für kleine elektrische Felder formuliert werden kann als
 \vec{P}=\varepsilon_0\chi\vec{E}.
 \end{equation*}
 Hierbei ist $\varepsilon_0$ die Influenzkonstante und $\chi$ die
-dielektrische Suszeptibilität, welche in anistropen Kristallen als
-Tensor $\overline{\overline{chi}}$ geschrieben wird.
+dielektrische Suszeptibilität, welche in anisotropen Kristallen als
+Tensor $\overline{\overline{\chi}}$ geschrieben wird.
 Doppelbrechung entsteht genau dann, wenn ein Kristall anistrope Eigenschaften aufweist.
 Der Beweis dieser Behauptung wird im Folgenden skizziert.
 Hierfür wird die folgende dielektrische Suszeptibilität
- $\overline{\overline{chi}}$ betrachtet:
+ $\overline{\overline{\chi}}$ betrachtet:
 \begin{equation}
   \label{eq:chi_tens_example}
-  \overline{\overline{chi}}=\begin{pmatrix} \chi_\text{xx} & \text{i}\chi_\text{xy} & 0 \\ -\text{i}\chi_\text{yx} & \chi_\text{xx} & 0 \\ 0 & 0 & \chi_\text{zz} \end{pmatrix}.
+  \overline{\overline{\chi}}=\begin{pmatrix} \chi_\text{xx} & \text{i}\chi_\text{xy} & 0 \\ -\text{i}\chi_\text{yx} & \chi_\text{xx} & 0 \\ 0 & 0 & \chi_\text{zz} \end{pmatrix}.
 \end{equation}
 Propagiert ein elektrisches Feld durch Materie, so erfolgt die Änderung des Feldes nach:
 \begin{equation}
   \label{eq:e_feld_in_materie}
-  \vec{D}=\varepsilon_0\left(1+\overline{\overline{chi}}\right)\vec{E}.
+  \vec{D}=\varepsilon_0\left(1+\overline{\overline{\chi}}\right)\vec{E}.
 \end{equation}
 Wird nun die Gleichung \eqref{eq:e_feld_in_materie} mit \eqref{eq:chi_tens_example}
 in die homogene Wellengleichung
@@ -126,7 +126,7 @@ dass sich die Welle in $z$-Richtung ausbreitet ($\vec{k}=k\vec{z}_0$).
 Der Faraday-Effekt beschreibt das Phänomen, dass ein optisches
 Medium, durch ein externes Magnetfeld, Nebendiagnonalelemente im elektrischen Suszeptibilitättensor erhält.
 Hierdurch wird die Polarisationsebene eines Lichtfeldes $\vec{E}$ gedreht, das parallel zum Magnetfeld einfällt.
-Dieses Phänomen kann präziser erfasst werden, durch die Betrachtung von gebunden Elektronen im Magnetfeld $\vec{B}$, welche zusätzlich durch ein elektrisches Feld (verursacht durch die Lichtwelle) gestört werden.
+Dieses Phänomen kann präziser erfasst werden, durch die Betrachtung von gebundenen Elektronen im Magnetfeld $\vec{B}$, welche zusätzlich durch ein elektrisches Feld (verursacht durch die Lichtwelle) gestört werden.
 \begin{equation}
   \label{eq:klassische_Bewegungsgleichung}
   m\ddot{\vec{r}}+K\vec{r}=-\text{e}\vec{E}(\vec{r})_0-\text{e}\dot{\vec{r}}\times\vec{B}
@@ -134,12 +134,12 @@ Dieses Phänomen kann präziser erfasst werden, durch die Betrachtung von gebund
 Der Vektor $\vec{r}$ bezeichnet die Auslenkung des Elektrons aus der Gleichgewichtslage, die Konstante $K$ bezeichnet die Bindung des Elektrons an seine Umgebung, die Elementarladung
 ist gegeben durch $\text{e}_0$ und die Feldstärke der einfallenden Lichtwelle
 wird durch $\vec{E}$ repräsentiert.
-Unter der Annahme quasifreier Ladungsträger kann
+Unter der Annahme quasifreier Ladungsträger und dass die Messfrequenz wesentlich größer als die Zyklotronfrequenz ist, kann
 aus der Differntialgleichung \eqref{eq:klassische_Bewegungsgleichung} ein Ausdruck
 für den Drehwinkel der Polarisationsebene $\vartheta$ abgeleitet werden:
 \begin{equation}
   \label{eq:drehwinkel}
-  \frac{\vartheta}{L}\approx \frac{\text{e}^3\lambda^2 NB}{8\pi^2\varepsilon_0\text{c}_0^3}\frac{1}{m^2} = \frac{\text{e}^3\lambda^2 NB}{8\pi^2\varepsilon_0\text{c}_0^3}\frac{1}{m^{*2}}
+  \frac{\vartheta}{L}\approx \frac{\text{e}^3\lambda^2 NB}{8\pi^2\varepsilon_0\text{c}_0^3}\frac{1}{m^2 \cdot n} = \frac{\text{e}^3\lambda^2 NB}{8\pi^2\varepsilon_0\text{c}_0^3}\frac{1}{m^{*2} \cdot n}
 \end{equation}
 Das Ersetzen von $m$ durch $m^*$ ist durch die in Abschnitt \ref{sec:effektive_masse}
 besprochene Eigenschaft der effektiven Masse gerechtfertigt.

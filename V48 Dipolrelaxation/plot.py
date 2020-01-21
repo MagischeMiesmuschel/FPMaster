@@ -71,7 +71,7 @@ for T, I, selection, offset_selection, p0, name, ff in [
         plt.ylim(-3, 21)
         I2_cleaned = I_cleaned
     plt.xlabel(r'$T$ / K')
-    plt.ylabel(r'$j$ / pA')
+    plt.ylabel(r'$i$ / pA')
     plt.grid()
     plt.legend(loc='best')
     if name == 'set1':
@@ -122,8 +122,8 @@ for T, I, selection1, selection2, name in [
     plt.plot(xs, j_aprox(xs, C=val[0], W=val[1]), 'r-', label='Fit')
     plt.plot(T_sel2, I_sel2, 'b.', label='bereinigte Daten\n(nicht verwendet)')
     plt.plot(T_sel1, I_sel1, 'g.', label='bereinigte Daten\n(für Fit verwendet)')
-    plt.xlabel(r'$T^{-1}$ / $K^{-1}$')
-    plt.ylabel(r'$ln(j)$ / pA')
+    plt.xlabel(r'$T^{-1}$ / $\text{K}^{-1}$')
+    plt.ylabel(r'$\ln(i)$ / pA')
     plt.legend(loc='best')
     if name == 'set1':
         plt.savefig('build/plot3.pdf')
@@ -199,8 +199,8 @@ for T, I, selection, selection2, name in [
     plt.plot(xs, linear_fit(xs, A=var[0], B=var[1]), 'r-', label='Fit')
     #plt.plot(1/T_ignored, logstuff_ignored, 'b.', label='bereinigte Daten\n(nicht verwendet)')
     plt.plot(1/T, logstuff, 'g.', label='bereinigte Daten \n(für Fit verwendet)')
-    plt.xlabel(r'$T^{-1}$ / $K^{-1}$')
-    plt.ylabel(r'ln(...)')
+    plt.xlabel(r'$T^{-1}$ / $\text{K}^{-1}$')
+    plt.ylabel(r'$\ln\left(\int_{T}^{T*} i(T) \mathrm{d}\,T \:/\: i(T) \cdot b \right)$')
     plt.legend(loc='best')
     if name == 'set1':
         plt.savefig('build/plot5.pdf')
@@ -236,12 +236,17 @@ for T, I, name in [[T1, I1, "set1"], [T2, I2, "set2"]]:
 
     Tmax = find_maxT(T, I)
 
+    steigung_plot = steigung
+    steigung = ufloat(np.mean(steigung), np.std(steigung))
+
     print(name)
     print("Tmax: ", Tmax)
-    print("Steigung: ", np.mean(steigung))
-    print("Tau approx:", tau(-Ws['approx'][name]*constants.eV, Tmax, np.mean(steigung)), -Ws['approx'][name])
-    print("Tau integrated:", tau(Ws['integrated'][name]*constants.eV, Tmax, np.mean(steigung)), Ws['integrated'][name])
-    plt.plot(new_time, steigung)
+    print("Steigung: ", steigung.n, steigung.s)
+    print("Tau approx:", tau(-Ws['approx'][name]*constants.eV, Tmax, steigung), -Ws['approx'][name])
+    print("Tau integrated:", tau(Ws['integrated'][name]*constants.eV, Tmax, steigung), Ws['integrated'][name])
+    plt.plot(new_time, steigung_plot)
 
 
 plt.savefig('build/plot7.pdf')
+
+#

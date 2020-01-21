@@ -10,8 +10,8 @@
 \contentsline {section}{\numberline {3}Durchführung}{7}{section.3}% 
 \contentsline {section}{\numberline {4}Auswertung}{7}{section.4}% 
 \contentsline {subsection}{\numberline {4.1}Untergrund}{7}{subsection.4.1}% 
-\contentsline {subsection}{\numberline {4.2}Stromdichteansatz}{10}{subsection.4.2}% 
-\contentsline {subsection}{\numberline {4.3}Polarisationsansatz}{11}{subsection.4.3}% 
-\contentsline {subsection}{\numberline {4.4}Relaxationszeit}{13}{subsection.4.4}% 
-\contentsline {section}{\numberline {5}Diskussion}{14}{section.5}% 
-\contentsline {section}{\nonumberline Literatur}{14}{section*.12}% 
+\contentsline {subsection}{\numberline {4.2}Stromdichteansatz}{8}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}Polarisationsansatz}{12}{subsection.4.3}% 
+\contentsline {subsection}{\numberline {4.4}Relaxationszeit}{15}{subsection.4.4}% 
+\contentsline {section}{\numberline {5}Diskussion}{15}{section.5}% 
+\contentsline {section}{\nonumberline Literatur}{16}{section*.12}% 
