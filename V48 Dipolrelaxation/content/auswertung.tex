@@ -130,6 +130,12 @@ bestimmen:
     \label{eqn:tau0}
     \tau_0 = \frac{\symup{k_B}T_\text{max}^2}{W \cdot b} \exp\left(-\frac{W}{\symup{k_B}T_\text{max}} \right).
 \end{equation}
+Der Fehler ergibt sich dabei nach
+\begin{align*}
+    \label{eqn:FehlerTau}
+    \Delta \tau_0 & =\sqrt{\left(\frac{\symup{k_B} T_\text{max}^2}{W \cdot b} \exp\left(-\frac{W}{\symup{k_B} T_\text{max}}\right)\left(-\frac{1}{\symup{k_B}T_\text{max}} - \frac{1}{W} \right) \Delta W \right)^2} \\
+    &\overline{+ \left(-\frac{\symup{k_B} T_\text{max}^2}{b^2} \exp\left(-\frac{W}{\symup{k_B} T_\text{max}}\right)\Delta b \right)^2}.
+\end{align*}
 Dabei wird für $T_\text{max}$ das Maximum der jeweiligen Heizrate nach Abzug des Untergrunds bestimmt.
 Die Heizraten werden aus dem Mittelwert der mittleren Änderungsraten zwischen zwei Datenpunkten bestimmt.
 Wie bereits erwähnt ist eine Heizrate \SI{1.43(28)}{\kelvin\per\minute} und die andere Heizrate \SI{1.91(22)}{\kelvin\per\minute}.

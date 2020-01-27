@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber build/main"] 1579558753 "build/main.bcf" "build/main.bbl" "build/main" 1579568358
-  "build/main.bcf" 1579568113 91493 c67666ed534c281b505c693238690a31 ""
+["biber build/main"] 1579558753 "build/main.bcf" "build/main.bbl" "build/main" 1580129520
+  "build/main.bcf" 1580129314 91493 c67666ed534c281b505c693238690a31 ""
   "lit.bib" 1572365283 237 b997733b2c7eccadd8115c9899f61c2e ""
   "programme.bib" 1572365283 1042 681836d224c758e678e4f1a862d141da ""
   (generated)
-  "build/main.bbl"
   "build/main.blg"
-["lualatex"] 1579568107 "main.tex" "build/main.pdf" "main" 1579568358
+  "build/main.bbl"
+["lualatex"] 1580129309 "main.tex" "build/main.pdf" "main" 1580129520
   "/home/jannis/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1480098679 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/jannis/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1480098679 64684 15a2082c8e31f411875a86ea2d29a0ee ""
   "/home/jannis/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1480098679 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
@@ -190,17 +190,17 @@
   "/home/jannis/.local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/xitsmath-regular.luc" 1556217477 415232 006ec7c9f400a257d5fe10c3e942cffb ""
   "/home/jannis/.local/texlive/2018/texmf-var/tex/generic/config/language.dat.lua" 1553901403 17401 9f1ff6e8c0ec6ae9da48824e81bf38bc ""
   "/home/jannis/.local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt" 1553901431 1370294 b61b3fc29607683f26aa86bbbc2ddfa4 ""
-  "build/main.aux" 1579568113 13919 f0d26267629958aef078df4bf5f5992e ""
+  "build/main.aux" 1580129314 13919 ac9a18cce7542acf125ede436693b69e ""
   "build/main.bbl" 1579558753 2049 cbf90febe274c52d9f48536aa4acbdf4 "biber build/main"
-  "build/main.run.xml" 1579568113 2365 9506e75c9b41e27fa8670338f5c4ba94 ""
-  "build/main.toc" 1579568113 1271 8ea4c6b319182945db55bd96226a9cc5 ""
+  "build/main.run.xml" 1580129314 2365 9506e75c9b41e27fa8670338f5c4ba94 ""
+  "build/main.toc" 1580129314 1271 8ea4c6b319182945db55bd96226a9cc5 ""
   "build/plot1.pdf" 1579568096 13399 7d6c4e829e5dc8b89be2a6c9d1515986 ""
   "build/plot2.pdf" 1579568098 12813 8171625d4a027314920bafcae1c8b268 ""
   "build/plot3.pdf" 1579568100 12683 5c0bb20d257dfaf32f5fc7d789e8de68 ""
   "build/plot4.pdf" 1579568102 12635 601797de5584a82190f33acf78b42c13 ""
   "build/plot5.pdf" 1579568104 13171 fe63a21fe13ef83c321323c875f8bd10 ""
   "build/plot6.pdf" 1579568106 13053 79f52d0f0816997e4837818b2a0ff709 ""
-  "content/auswertung.tex" 1579567222 8129 30e3640347e03e29d838328ddee8f79c ""
+  "content/auswertung.tex" 1580129306 8569 e8dfcc9ff3f428acdbf434fb3d859989 ""
   "content/diskussion.tex" 1579564540 1837 2183273572d022e588be5dd30fd3bcdd ""
   "content/durchfuehrung.tex" 1572473144 54 799191e7c0dfb25cf0ba2c683e6a9102 ""
   "content/theorie.tex" 1574279256 9016 d1a7eccc8d92210469892b7aa26d32be ""
@@ -211,9 +211,9 @@
   "header.tex" 1572365283 3636 45c0ce01458d52c20461ab79c7d8926d ""
   "main.tex" 1579567464 445 96a4938df1a21a12b4cc93c875141b35 ""
   (generated)
-  "build/main.log"
-  "build/main.toc"
-  "build/main.pdf"
   "build/main.run.xml"
-  "build/main.aux"
   "build/main.bcf"
+  "build/main.log"
+  "build/main.pdf"
+  "build/main.aux"
+  "build/main.toc"
