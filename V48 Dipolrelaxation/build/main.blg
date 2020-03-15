@@ -1,8 +1,18 @@
-[1] Config.pm:354> INFO - This is Biber 2.7
-[2] Config.pm:357> INFO - Logfile is 'build\main.blg'
-[217] biber-MSWIN32:303> INFO - === 
-[326] Biber.pm:359> INFO - Reading 'build\main.bcf'
-[830] Utils.pm:180> ERROR - Error: Found biblatex control file version 3.5, expected version 3.3.
-This means that your biber (2.7) and biblatex (3.12) versions are incompatible.
-See compat matrix in biblatex or biber PDF documentation.
-[831] Biber.pm:113> INFO - ERRORS: 1
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'build/main.blg'
+[17] biber:315> INFO - === Mo Jan 20, 2020, 23:19:13
+[31] Biber.pm:371> INFO - Reading 'build/main.bcf'
+[73] Biber.pm:889> INFO - Found 1 citekeys in bib section 0
+[82] Biber.pm:4093> INFO - Processing section 0
+[89] Biber.pm:4254> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[90] bibtex.pm:1523> INFO - LaTeX decoding ...
+[92] bibtex.pm:1340> INFO - Found BibTeX data source 'lit.bib'
+[92] Biber.pm:4254> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[92] bibtex.pm:1523> INFO - LaTeX decoding ...
+[96] bibtex.pm:1340> INFO - Found BibTeX data source 'programme.bib'
+[107] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[107] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[108] Biber.pm:3921> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[108] Biber.pm:3927> INFO - No sort tailoring available for locale 'de-DE'
+[111] bbl.pm:636> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[112] bbl.pm:739> INFO - Output to build/main.bbl

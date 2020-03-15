@@ -26,7 +26,7 @@ n_leichtdot = 1.2e18
 l_hochdot = 1.296
 n_hochdot = 2.8e18
 B = max(bfeld)*10e-3
-m_e = 5.485799e-31
+m_e = 9.10938356e-31
 
 theta_dif_undot = (undotiert_1-undotiert_2)
 theta_dif_leichtdot = (leichtdotiert_1 -leichtdotiert_2)

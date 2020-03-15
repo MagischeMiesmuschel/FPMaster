@@ -1,0 +1,50 @@
+\section{Ziel}
+Am Beispiel des Helium-Neon-Lasers sollen die grundlegenden Konzepte von Lasern erarbeitet werden.
+Diese umfassen deren Stabilität, transversale Moden, die Polaristaion des Laserlichts und der Wellenlänge
+
+\section{Theorie}
+\label{sec:Theorie}
+
+Laserstrahlen sind elektromagnetische Wellen mit einer hohen Intensität.
+Sie sind stark monochromatisch und besitzen eine große Kohärenzlänge.
+In einer Laserapperatur, bestehend aus drei Hauptbestandteilen, werden diese erzeugt.
+Die drei Bestandteile sind ein aktives Medium und eine Pumpe die einen Strahl erzeugen, welcher durch zwei Spiegel, die den Resonator formen, total und teilreflektiert wird.
+Durch den öffteren Durchlauf durch das aktive Medium ist eine große Verstärkung möglich.
+
+\subsection{Erzeugung von Laserlicht}
+
+Die drei wichtigsten Wechselwirkungen sind die Absoption von Photonen, die spontane Emission und die stimmulierte Emission.\\
+Bei der Absorption wird ein Photon von einem Atom absorbiert, womit ein Elektron in ein angeregtes Niveau gehoben wird.
+Seine Energie steigt und das Photon verschwindet.
+Dieser Prozess kann nur stattfinden, wenn $E_\gamma \geq \Delta E_{Niveau}$ gilt.\\
+Die spontane Emission ist der typische Zerfall von angeregten Zuständen mit einer begrenzten Lebensdauer in Zustände mit einer niedrigeren Energie.
+Dabei wird ein Photon ausgesendet, dessen Energie der Energiedifferenz der Niveaus $\Delta E_{Niveau}$ entspricht.\\
+Bei der stimmulierte Emission löst ein Photon mit der Energie der Energiedifferenz den Zerfall aus.
+Dabei wird ein dem einfallenden Photon in Richtung, Phase und Enerie gleiches Photon freigesetzt.
+Somit sind die beiden Photonen kohärent.\\
+Nur der Mechanismus der stimmulierten Emission ermöglicht eine Verstärkung für kohärentes, monochromatisches Licht.
+Dafür muss eine Besetzungsinversion auftreten in den Niveaus des aktiven Mediums, indem ein Zustand, der größer als der Grundzustand ist, mehr als zur Hälfte gefüllt ist.
+Dies st nicht für ein Zweiniveausystem zu realisieren.
+Dort entspricht die Energie für Anregung der für die stimmulierte Emission und omit konkurrieren diese Prozesse.
+Somit ist ein System mit mindestens drei Niveaus nötig.
+Elektronen werden aus dem Grundzustand in einen hoch angeregten Zustand gehoben, welcher schnell durch spontane Emission in einen metastabilen Zustand zerfällt mit höherer Lebensdauer.
+Bei He-Ne-Laser geschiet dies durch Stöße zweiter Art zwischen den Helium- und Neonatomen.
+Nun können Photonen mit passender Energie die stimmulierte Emission auslösen, welche anfänglich aus der spontanen Emission des metastabilen Zustands kommen.\\
+Durch die Spiegel werden die Photonen aus der stimmulierten Emission öfters durch das Medium geführt um eine lawinenartige Vervielfälltigung zu erzeugen.
+
+\subsection{Stabilität}
+
+Die Bedingung
+\begin{equation}
+    0 \le g_1g_2 \le 1
+    \label{eqn:stabi}
+\end{equation}
+muss für die Stabilitätsparameter $g_i =1-\frac{L}{r_i}$ gelten, damit der Resonator optisch stabil ist.
+$L$ ist der Abstand beider Spiegel und $r_i$ der Krümmungsradius.
+Bei einem stabilen Resonator sind die Verluste kleiner als die Verstärkung durch die stimmulierte Emission.
+
+\subsection{Lasermoden}
+
+Weil die Resonatorlänge $L$ sehr groß zur Wellenlänge $\lambda$ des Lasers ist, sind viele Moden möglich.
+Mit $l$ und $p$ werden die Knoten in $x-$ und $y-$Richtung genannt.
+Die Eigenschwingungen werden als TEM$_{l,p}$ bezeichnet, wobei die gaußförmige Grundmode TEM$_{0,0}$ den größten Anteil am Modenspektrum besitzt, weil diese weniger Verluste als höhere Moden aufweist.
